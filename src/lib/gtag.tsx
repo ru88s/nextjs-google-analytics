@@ -30,13 +30,15 @@ export const event = ({ action, category, label, value = '' }: Event) => {
 // _app.tsx で読み込む
 export const usePageView = () => {
   const router = useRouter()
-
+  // console.log(router);
+  // console.log(router.events);
   useEffect(() => {
     if (!existsGaId) {
       return
     }
 
     const handleRouteChange = (path: string) => {
+      console.log(path);
       pageview(path)
     }
 

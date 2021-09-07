@@ -1,3 +1,3 @@
 export default function Index() {
-	return <div>GA</div>
+	return <div><a href="test">GA</a></div>
 }
